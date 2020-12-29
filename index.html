@@ -111,6 +111,23 @@ div
 <div> <p style="font-family:sans verdana; text-align: center;"> Liquid Fusion   </div> </p>
 <div id="div2"> <p style="font-family:sans verdana; text-align: center;"><iframe width="720" height="240" src="https://rumble.com/embed/v8tk1h/?pub=8aelr" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 
 </body>
 </html>
