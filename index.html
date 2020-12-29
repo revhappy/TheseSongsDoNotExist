@@ -6,6 +6,32 @@
 <style type="text/css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
 /*
 div
@@ -45,7 +71,7 @@ div
 
 	<p style="font-family:sans verdana; text-align: center;"> We can hardly wait.</p>
 </div>
-</div>
+	
 <div> <p style="font-family:sans verdana; text-align: center;"> Days Out  </div></p>
 <div id="div2">  <p style="font-family:sans verdana; text-align: center;"><iframe width="720" height="240" src="https://rumble.com/embed/v8synh/?pub=8aelr" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 	<p>    </p>	
